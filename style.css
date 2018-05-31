@@ -1,57 +1,112 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+html, body {
+    margin:0;
+    padding:0;
 }
-p {
+p#sidebartext {
     padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+p#contenttext {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-indent: 75px;
+    font-size: 18px;
+}
+p#contenttitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-indent: 75px;
+    color: white;
+    font-size: 
+}
+p#copyrite {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+h {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 60px;
+    color: white;
 }
 img {
     padding: 10px;
 }
-.container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 50px;
-    width: 100vw;
-    height: 100vh;
-}
-.menu {
-    grid-column: 1 / 4;
-    grid-row: 1;
+.sidebar {
     background-color: #2c3e50;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 .content {
-    grid-column: 4 / 13;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
+    margin-left: 300px;
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 28px;
+    background-color: #43A047;
 }
-.test1 {
-    grid-column: 1;
-    grid-row: 1;
-    background-color: #2980b9;
+
+.social-icon {
+    color: #fff;
+    font-size: 30pt;
 }
-.test2 {
-    grid-column: 2;
-    grid-row: 1;
-    background-color: #e74c3c;
-    
+ul {
+    padding:10px;
 }
-.test3 {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: #c0392b;
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
 }
-.test4 {
-    grid-column: 2;
-    grid-row: 2;
-    background-color: #3498db;
+.fa-github:hover {
+    background-color: #6cc644;
 }
-.footer {
-   grid-column: 1 / 13;
-   grid-row: 2;
-   background-color: #9b59b6;
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #4875B4;
+}
+.fa-twitter {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #1DA1F2;
+}
+.fa-envelope {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-envelope:hover {
+    background-color: #e67e22;
+}
+ul#social li {
+    display: inline;
 }

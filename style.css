@@ -14,13 +14,11 @@ p#sidebartext {
 p#contenttext {
     font-family: 'Roboto', sans-serif;
     color: white;
-    text-indent: 75px;
     font-size: 18px;
 }
 p#contenttitle {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    text-indent: 75px;
     color: white;
     font-size: 
 }
@@ -50,12 +48,15 @@ img {
 }
 .content {
     margin-left: 300px;
-    height: 100%;
     padding: 0px 10px;
     font-size: 28px;
     background-color: #43A047;
 }
-
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .social-icon {
     color: #fff;
     font-size: 30pt;
